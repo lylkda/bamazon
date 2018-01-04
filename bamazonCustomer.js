@@ -11,7 +11,7 @@ var connection = mysql.createConnection({
     user: "root",
 
     // Your password
-    password: "dor3mon1",
+    password: "",
     database: "bamazon_db"
 });
 
@@ -73,7 +73,7 @@ function ask() {
         {
             type: "list",
             name: "action",
-            message: "Would you like purchase or take a look at our products?",
+            message: "Would you like to purchase or take a look at our products?",
             choices: ["Purchase", "See products", "Leave store"]
         }
     ).then(function(ans1){
